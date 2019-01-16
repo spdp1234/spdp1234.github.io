@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Technical Skills</title>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" type="text/css" href="w3csspro.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="tags.css">
+
+</head>
+
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+<body>
+
+<div>
+  <div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">EBC</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="skills.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Technical Skills</a>
+      <a href="price.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Pricing</a>
+      <a href="learn.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Learn & Earn</a>
+      <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"><b>ABOUT</b></a>
+  <a href="skills.html" onclick="w3_close()" class="w3-bar-item w3-button"><b>TECHNICAL SKILLS</b></a>
+  <a href="learn.html" onclick="w3_close()" class="w3-bar-item w3-button"><b>LEARN & EARN</b></a>
+  <a href="price.html" onclick="w3_close()" class="w3-bar-item w3-button"><b>PRICING</b></a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+
+<div class="w3-container w3-sand w3-center " style="padding: 118px 12px">
+  <h2><b>Technical Skills</b></h2>
+  <p class="w3-container w3-red">
+    <h4 align="w3-center">
+      On choosing any of these packages you will be given projects from various technical and business startups from pune
+      and will award you with a <b>CERTIFICATE</b> of completion of your selected course.
+    </h4>
+  </p>
+</div>
+<div class="w3-container w3-center style="padding:128px 16px ">
+  <p> Click On this button to know the Prices of the Packages</p>
+     
+     <p> <a href="price.html" class="w3-button w3-black"><b>Prices</b></a>
+</p>
+
+</div>
+
+
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="shubham.jpg" style="width:100%">
+  <img class="mySlides" src="rushi.jpg" style="width:100%">
+  <img class="mySlides" src="front3.jpg" style="width:100%">
+  <img class="mySlides" src="laptop.jpg" style="width:100%">
+  
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+<div align="center">
+<div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter w3-center">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large w3-wide">Websites & Frameworks</p>
+      <p>Have Knowlegde of HTML & CSS but don't know actually how to frame websites.<br>
+        Worry!! No more, we include a package called "Websites & Frameworks" which will help you to build your own websites.It include:
+      </p>
+      <p class="w3-large w3-wide">Bootstrap And Website Samples</p>
+    </div>
+  </div>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+
+// Modal Image Gallery
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+
+</script>
+
+
+
+</body>
+</html>
